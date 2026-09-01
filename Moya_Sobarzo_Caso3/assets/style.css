@@ -7,3 +7,24 @@
     background-color:rgb(179, 159, 219);
 
 }
+
+.container{
+
+    padding: 20px;
+
+    width: 400px;
+
+    margin-top: 180px;
+    
+    background-color: rgb(183, 243, 223);
+    border-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submitb{
+    text-align: center;
+    padding: 20px;
+}
