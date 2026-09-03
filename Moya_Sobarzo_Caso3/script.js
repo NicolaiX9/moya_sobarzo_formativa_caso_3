@@ -28,3 +28,8 @@ document.getElementById("cuerpo-login").addEventListener("submit", function(even
     }
 });
 
+
+document.getElementById("btnRegisterUser").addEventListener("click", function(){
+    window.location.href = "registro.html"
+    
+});
