@@ -1,18 +1,27 @@
+const listaUsuarios = [
+    {id: 1, username: "nico@gmail.com", password: "nico1234"},
+    {id: 2, username: "juan@gmail.com", password: "aa123"},
+    {id: 3, username: "felipe@gmail.com", password: "moya67"}
+
+]
+
+
+
 document.getElementById("cuerpo-login").addEventListener("submit", function(event){
     event.preventDefault();
 
     const inputUser = document.getElementById("username").value;
     const inputPass = document.getElementById("password").value;
 
-    const personaELement = document.querySelector(".persona");
-    const id = personaELement.dataset.id;
-    const correctUser = personaELement.dataset.username;
-    const correctPass = personaELement.dataset.password;
+   const usuarioEncontrado = listaUsuarios.find(function(user){
+    return user.username === inputUser && user.password === inputPass;
+   });
 
-    if(inputUser === correctUser && inputPass === correctPass){
+    if(usuarioEncontrado){
         console.log("Inicio de Sesion exitosa");
-        console.log("ID del usuario registrado:", id);
-        alert("Bienvenido a GameZone");
+        console.log("ID del usuario registrado:", usuarioEncontrado.id);
+        alert("Bienvenido a GameZone, " + usuarioEncontrado.username);
+        window.location.href = "home.html"
     } else {
         console.log("Datos ingresados incorrectos.")
         alert("Usuario o contraseña incorrectos");
