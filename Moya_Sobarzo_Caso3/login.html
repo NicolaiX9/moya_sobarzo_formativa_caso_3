@@ -13,16 +13,17 @@
         <section class="texto-general">
         <nav class="nav-bar">
             <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">GameZone</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="registro.html">Registro</a></li>
-            </ul>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="home.html">Home</a></li>
-            </ul>
+              <a href="#" class="brand-logo center">GameZone</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="registro.html">Registro</a></li>
+              </ul>
+              <ul id="nav-mobile" class="left hide-on-med-and-down">
+                  <li><a href="home.html">Home</a></li>
+              </ul>
             </div>
         </nav>
-        </section>  
+        </section> 
+
         <section class="inicio-de-sesion">
             <div class="container"> 
                 <div class="item">  
@@ -30,17 +31,27 @@
                   <label for="username">Correo:</label><br>
                   <input type="text" id="username" name="username"><br>
 
-
                   <label for="password">Contraseña:</label><br>
-                  <input type="text" id="password" name="password"><br>
+                  <input type="password" id="password" name="password"><br>
+
                   <div class="submitb">
-                    <button type="submit">Iniciar Sesión</button>
+                    <button type="submit" class="btn" id="btnSubmit">Iniciar Sesión</button>
                   </div>
+
+                  <article
+                    class="persona"
+                    data-id="1"
+                    data-username="nico"
+                    data-password="nico1234">
+                </article>  
                 </div>  
               </form>
             </div>
           </section>
-    <link rel="stylesheet" href="script.js">
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+
   </body>
 </html>
