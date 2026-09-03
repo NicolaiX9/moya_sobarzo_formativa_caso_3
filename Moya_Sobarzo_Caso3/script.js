@@ -27,3 +27,9 @@ document.getElementById("cuerpo-login").addEventListener("submit", function(even
         alert("Usuario o contraseña incorrectos");
     }
 });
+
+
+document.getElementById("btnRegisterUser").addEventListener("click", function(){
+    window.location.href = "registro.html"
+    
+});
