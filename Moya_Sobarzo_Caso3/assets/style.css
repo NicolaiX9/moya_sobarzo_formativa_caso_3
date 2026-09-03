@@ -8,23 +8,54 @@
 
 }
 
-.container{
+.login-container{
 
-    padding: 20px;
+    padding: 0px;
 
     width: 400px;
-
-    margin-top: 180px;
     
-    background-color: rgb(183, 243, 223);
-    border-top: 100px;
+    background-color: rgb(205, 241, 229);
+    
+}
+
+.contenedor-encabezado{
+    background-color:rgb(179, 159, 219);
+
+    padding: 5px;
+    
+}
+
+.submitb{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.ventana-de-login{
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.submitb{
-    text-align: center;
-    padding: 20px;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin-top: 200px;
+}
+
+.container-title{
+
+    margin-bottom: 15px;
+
+    margin-top: 0px;
+
+    padding-top: 0px;
+
+}
+
+.cuerpo-login{
+    padding: 10px;
 }
