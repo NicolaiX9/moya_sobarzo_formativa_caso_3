@@ -1,50 +1,20 @@
+document.getElementById("cuerpo-login").addEventListener("submit", function(event){
+    event.preventDefault();
 
-const readline = require('readline');
+    const inputUser = document.getElementById("username").value;
+    const inputPass = document.getElementById("password").value;
 
-const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+    const personaELement = document.querySelector(".persona");
+    const id = personaELement.dataset.id;
+    const correctUser = personaELement.dataset.username;
+    const correctPass = personaELement.dataset.password;
 
-rl.question('Ingresa un valor: ', (respuesta) => { console.log(`El valor ingresado es: ${respuesta}`); rl.close()}); 
-
-
-
-
-const readline = require('readline/promises');
-
-const { stdin: input, stdout: output } = require('process');
-
-
-
-async function calcular() {
-
- const rl = readline.createInterface({ input, output });
-
-
-
-
- const dato1 = await rl.question('Ingresa el primer número: ');
-
- const dato2 = await rl.question('Ingresa el segundo número: ');
-
-
-
-
- const num1 = parseFloat(dato1);
-
- const num2 = parseFloat(dato2);
-
- const suma = num1 + num2;
-
-
-
- console.log(`La suma de ${num1} + ${num2} es: ${suma}`);
-
-
-
-
- rl.close();
-
-}
-
-
-
-calcular();
+    if(inputUser === correctUser && inputPass === correctPass){
+        console.log("Inicio de Sesion exitosa");
+        console.log("ID del usuario registrado:", id);
+        alert("Bienvenido a GameZone");
+    } else {
+        console.log("Datos ingresados incorrectos.")
+        alert("Usuario o contraseña incorrectos");
+    }
+});
