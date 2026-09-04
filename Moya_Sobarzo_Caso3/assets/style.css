@@ -1,8 +1,12 @@
+
+/*Fuente para toda la página */
+
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
+/*Color de la navbar */
 .nav-bar{
     background-color:rgb(179, 159, 219);
 
@@ -10,6 +14,7 @@
 
 
 
+/*Contenedor que guarda el encabezado del registro */
 .inner-register-container{
    
     width: 400px;
@@ -22,6 +27,8 @@
     
 }
 
+
+/*Contenedor del la ventana de login*/
 .login-container{
     width: 400px;
     
@@ -31,6 +38,7 @@
     
 }
 
+/*Header que posee el encabezado de la ventana de login*/
 .contenedor-encabezado{
     background-color:rgb(179, 159, 219);
 
@@ -38,18 +46,16 @@
     
 }
 
+/*Botones del formulario*/
 .submitb{
     text-align: center;
     padding: 20px;
 }
 
 
-.registerb{
-    text-align: center;
-    padding: 20px;
-}
 
 
+/*Cajas del formulario de registro*/
 .boxes{
 
     display: grid;
@@ -61,13 +67,7 @@
     background-color: aliceblue;
 }
 
-.ventana-de-login{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/*Contenedor de la sección donde está la ventana de login */
 .container{
     display: flex;
     justify-content: center;
@@ -76,6 +76,8 @@
     margin-top: 250px;
 }
 
+
+/*Contenedor que posee el encabezado del login*/
 .container-title{
 
     margin-bottom: 15px;
@@ -86,6 +88,8 @@
 
 }
 
+
+/*Form con los datos del login*/
 .cuerpo-login{
     padding: 10px;
 }
